@@ -1,0 +1,15 @@
+.block {
+  background-color: tomato;
+}
+
+@include media-breakpoint-up(sm) {
+  .block {
+    background-color: black;
+  }
+}
+
+@media (min-width: 576px) {
+  .block {
+    background-color: black;
+  }
+}
