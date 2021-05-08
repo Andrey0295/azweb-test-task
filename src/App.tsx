@@ -1,6 +1,5 @@
 import React from "react";
-import StarshipsMain from "./components/StarshipsMain";
-// import "./App.scss";
+import StarshipsMain from "./components/StarshipsMain/StarshipsMain";
 
 function App() {
   return (
@@ -11,4 +10,3 @@ function App() {
 }
 
 export default App;
-// className="container-sm contsiner-md contsiner-lg"

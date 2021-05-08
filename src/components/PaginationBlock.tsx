@@ -16,6 +16,7 @@ const PaginationBlock: React.FC<PaginationBlockProps> = ({
     <Pagination className="d-flex justify-content-center ">
       <PaginationItem disabled={currentPage <= 1}>
         <PaginationLink
+          className="border border-2 border-primary"
           onClick={(e) => onClick(e, currentPage - 1)}
           previous
           href="#"
@@ -23,6 +24,7 @@ const PaginationBlock: React.FC<PaginationBlockProps> = ({
       </PaginationItem>
       <PaginationItem disabled={isLastPage}>
         <PaginationLink
+          className="border border-2 border-primary"
           onClick={(e) => onClick(e, currentPage + 1)}
           next
           href="#"
