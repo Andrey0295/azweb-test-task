@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/azweb-test-task/static/css/main.10efc757.chunk.css",
+    "main.js": "/azweb-test-task/static/js/main.a303875a.chunk.js",
+    "main.js.map": "/azweb-test-task/static/js/main.a303875a.chunk.js.map",
+    "runtime-main.js": "/azweb-test-task/static/js/runtime-main.7766f2c7.js",
+    "runtime-main.js.map": "/azweb-test-task/static/js/runtime-main.7766f2c7.js.map",
+    "static/css/2.61526bb2.chunk.css": "/azweb-test-task/static/css/2.61526bb2.chunk.css",
+    "static/js/2.438318e0.chunk.js": "/azweb-test-task/static/js/2.438318e0.chunk.js",
+    "static/js/2.438318e0.chunk.js.map": "/azweb-test-task/static/js/2.438318e0.chunk.js.map",
+    "index.html": "/azweb-test-task/index.html",
+    "static/css/2.61526bb2.chunk.css.map": "/azweb-test-task/static/css/2.61526bb2.chunk.css.map",
+    "static/css/main.10efc757.chunk.css.map": "/azweb-test-task/static/css/main.10efc757.chunk.css.map",
+    "static/js/2.438318e0.chunk.js.LICENSE.txt": "/azweb-test-task/static/js/2.438318e0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7766f2c7.js",
+    "static/css/2.61526bb2.chunk.css",
+    "static/js/2.438318e0.chunk.js",
+    "static/css/main.10efc757.chunk.css",
+    "static/js/main.a303875a.chunk.js"
+  ]
+}
