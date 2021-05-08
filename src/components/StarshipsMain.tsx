@@ -53,37 +53,49 @@ class StarshipsMain extends Component {
     const lastPage = starships.length < pageSize;
 
     return (
-      <>
-        <h2>Здесь будет результат запроса</h2>
-        {!this.state.isLoading && (
-          <ul>
-            {starships.map((ship: any) => (
-              <li key={ship.name}>{ship.name}</li>
-            ))}
-          </ul>
-        )}
-
-        <div>
-          <Card className={styles.block}>
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </CardText>
-            </CardBody>
-          </Card>
+      <div className={styles.main}>
+        <div className="text-center row row-cols-md-3 row-cols-lg-4 row-cols-sm-2 text-truncate g-0  mx-auto">
+          {starships.map((starship: any) => (
+            <div className="col " key={starship.name}>
+              <div className={styles.block}>
+                <Card className="border border-2 ">
+                  <CardBody className={styles.cardBody}>
+                    <CardTitle className="text-truncate" tag="h5">
+                      {starship.name}
+                    </CardTitle>
+                    <CardSubtitle
+                      tag="h6"
+                      className="mb-2 text-muted text-truncate"
+                    >
+                      {starship.model}
+                    </CardSubtitle>
+                    <CardText className="text-truncate text-uppercase">
+                      starship class: <br />
+                      {starship.starship_class}
+                    </CardText>
+                    <CardText className="text-truncate text-uppercase">
+                      hyperdrive rating: <br />
+                      {starship.hyperdrive_rating}
+                    </CardText>
+                    <CardText className="text-truncate text-uppercase">
+                      passengers: {starship.passengers}
+                    </CardText>
+                    <CardText className="text-truncate text-uppercase">
+                      manufacturer: <br />
+                      {starship.manufacturer}
+                    </CardText>
+                  </CardBody>
+                </Card>
+              </div>
+            </div>
+          ))}
         </div>
-
         <PaginationBlock
           currentPage={currentPage}
           onClick={this.handleClick}
           isLastPage={lastPage}
         />
-      </>
+      </div>
     );
   }
 }

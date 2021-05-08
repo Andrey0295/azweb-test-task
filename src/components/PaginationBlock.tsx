@@ -13,7 +13,7 @@ const PaginationBlock: React.FC<PaginationBlockProps> = ({
   isLastPage,
 }) => {
   return (
-    <Pagination>
+    <Pagination className="d-flex justify-content-center ">
       <PaginationItem disabled={currentPage <= 1}>
         <PaginationLink
           onClick={(e) => onClick(e, currentPage - 1)}
